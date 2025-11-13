@@ -1,67 +1,71 @@
 /* Resetando margens e fontes básicas */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background-color: #f0f2f5;
-    color: #333;
-    padding: 20px;
-  }
-  main{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Cabeçalho */
-  header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  /* Seções */
-  section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  section h2 {
-    color: #4a90e2;
-    margin-bottom: 10px;
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
 
-  ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header,
+footer {
+  text-align: center;
+  color: white;
+  background-color: #4a90e2;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Seções */
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Rodapé */
+footer {
   
-  /* Rodapé */
-  footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #555;
-     background-color: #4a90e2;
-  }
-  
+  padding: 15px;
+  font-size: 0.9em;
+  /* color: #555; */
+}
