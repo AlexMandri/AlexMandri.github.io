@@ -55,7 +55,14 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 section#sobre{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-grow: 1;
+
+}
+#sobre img{
+  width: 200px;
 }
 
 section h2 {
