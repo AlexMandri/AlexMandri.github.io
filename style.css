@@ -1,4 +1,16 @@
-/* Resetando margens e fontes básicas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* --color-background: #0d1117; */
+  --background: #f0f2f5;
+  --text: #333;
+  --accent: #4a90e2;
+  --accent-yellow:#ffcc00;
+  --color-header: #161b22;
+
+  --color-shadow: rgba(0, 188, 212, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +20,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: var(--background);
+  color: var(--text);
   padding: 0 20px;
   position: relative;
 }
@@ -33,7 +45,7 @@ header,
 footer {
   text-align: center;
   color: white;
-  background-color: #4a90e2;
+  background-color: var(--accent);
   border-radius: 10px;
 }
 
@@ -54,20 +66,49 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-section#sobre{
+
+section#sobre {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-grow: 1;
 
 }
-#sobre img{
+
+#sobre img {
   width: 200px;
 }
 
 section h2 {
   color: #4a90e2;
   margin-bottom: 10px;
+}
+
+#projetos ul li{
+  box-shadow: 0 4px 10px rgba(0, 0, 0.2);
+  
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 250px;
+  transition: transform 0.3s, border-color 0.3s;
+  border-left: 5px solid var(--accent);
+}
+#projetos ul li:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 2px 15px var(--accent);
+}
+
+#projetos ul li a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+
+#projetos ul li:hover a {
+  color: var(--accent-yellow);
 }
 
 ul {
@@ -80,5 +121,4 @@ ul {
 footer {
   padding: 15px;
   font-size: 0.9em;
-  /* color: #555; */
 }
